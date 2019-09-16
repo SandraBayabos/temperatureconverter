@@ -31,6 +31,10 @@ function kelvinToCelciusAndFarenheit() {
   farenheitInput.value = roundNum(fTemp);
 }
 
-celciusInput.addEventListener('input', celciusToFarenheitAndKelvin);
-farenheitInput.addEventListener('input', farenheitToCelciusAndKelvin);
-kelvinInput.addEventListener('input', kelvinToCelciusAndFarenheit);
+function main() {
+  celciusInput.addEventListener('input', celciusToFarenheitAndKelvin);
+  farenheitInput.addEventListener('input', farenheitToCelciusAndKelvin);
+  kelvinInput.addEventListener('input', kelvinToCelciusAndFarenheit);
+}
+
+main()
